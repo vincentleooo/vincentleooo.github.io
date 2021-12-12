@@ -1,20 +1,82 @@
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Graphik-Regular"),
+    url("../fonts/Graphik/Graphik-Regular.woff2") format("woff2"),
+    url("../fonts/Graphik/Graphik-Regular.woff") format("woff");
+}
+
+/* source-sans-pro-600 */
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Graphik-Medium"),
+    url("../fonts/Graphik/Graphik-Medium.woff2") format("woff2"),
+    url("../fonts/Graphik/Graphik-Medium.woff") format("woff");
+}
+
+/* source-sans-pro-700 */
+@font-face {
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Graphik-Bold"),
+    url("../fonts/Graphik/Graphik-Bold.woff2") format("woff2"),
+    url("../fonts/Graphik/Graphik-Bold.woff") format("woff");
+}
+
 .container {
-	margin: auto;
-	max-width: 500px;
-	font-family: sans-serif;
-  }
+	min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  font-family: "Graphik";
+  max-width: 720px;
+  width: 90%;
+  margin: 0 auto !important;
+  float: none !important;
+}
   
-  .heading {
-	color: rebeccapurple;
-  }
-  .nav-links {
-	display: flex;
-	list-style: none;
-	padding-left: 0;
-  }
-  .nav-link-item {
-	padding-right: 2rem;
-  }
-  .nav-link-text {
-	color: black;
-  }
+.heading {
+  color: rebeccapurple;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.nav-link-item {
+  padding-right: 2rem;
+}
+.nav-link-text {
+  color: black;
+}
+
+.footer p {
+  text-align: center;
+  font-size: x-small;
+}
+
+.link {
+  color:black;
+  text-decoration: none;
+}
+
+.active {
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+a {
+  color: rebeccapurple;
+  text-decoration: none;
+}
+
+.tagLine {
+  font-style: italic;
+  font-size: x-small;
+}
