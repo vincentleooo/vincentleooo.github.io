@@ -9,6 +9,7 @@ import {
   footer,
   active,
   link,
+  topTitle
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
@@ -16,6 +17,7 @@ const Layout = ({ pageTitle, children }) => {
     <div className={container}>
       <div>
         <title>{pageTitle}</title>
+        <p className={topTitle}>👨🏻‍💻 <b>Vincent's Project Page</b></p>
         <nav>
           <ul className={navLinks}>
             <li className={navLinkItem}><Link to="/" activeClassName={active} className={link} >Home</Link></li>
